@@ -1,4 +1,14 @@
-namespace ejercicioTelegrama
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Practica_Telegrama_ARSDAW2425
 {
     public partial class Form1 : Form
     {
@@ -20,7 +30,7 @@ namespace ejercicioTelegrama
             {
                 tipoTelegrama = 'u';
             }
-            //Obtengo el n�mero de palabras que forma el telegrama
+            //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
