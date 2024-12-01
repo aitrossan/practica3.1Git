@@ -26,7 +26,7 @@ namespace Practica_Telegrama_ARSDAW2425
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (chkUrgente.Checked)
+            if (radioBtnUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
@@ -68,6 +68,11 @@ namespace Practica_Telegrama_ARSDAW2425
                 }
             }
             txtPrecio.Text = coste.ToString() + " euros";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
