@@ -30,8 +30,12 @@ namespace Practica_Telegrama_ARSDAW2425
             {
                 tipoTelegrama = 'u';
             }
+            else
+            {
+                tipoTelegrama = 'o';
+            }
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            numPalabras = textoTelegrama.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
             {
@@ -41,7 +45,7 @@ namespace Practica_Telegrama_ARSDAW2425
                 }
                 else
                 {
-                    coste = 0.5 * numPalabras;
+                    coste = 2.5 + 0.5 * (numPalabras - 10);
                 }
             }
             else
